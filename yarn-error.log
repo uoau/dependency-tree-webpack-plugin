@@ -1,0 +1,41 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add dependency-tree-webpack-plugin -D
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  10.20.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile '/Users/luxun/Library/Caches/Yarn/v6/npm-inherits-2.0.1-b17d08d326b4423e568eff719f91b0b1cbdf69f1-integrity/node_modules/inherits/LICENSE' -> '/Users/luxun/self/git/dependency-tree-webpack-plugin/node_modules/assert/node_modules/inherits/LICENSE'
+
+npm manifest: 
+  {
+    "name": "dependency-tree-webpack-plugin",
+    "version": "1.0.0",
+    "description": "get dependency tree from webpack.",
+    "main": "index.js",
+    "scripts": {
+      "test": "webpack --config ./test/webpack.config.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "vue": "^2.6.11",
+      "webpack": "^4.43.0",
+      "webpack-cli": "^3.3.12"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

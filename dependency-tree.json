@@ -1,0 +1,22 @@
+{
+    "hood": 12122232,
+    "entry": [
+        "/Users/luxun/self/git/dependency-tree-webpack-plugin/test/src/a.js",
+        "/Users/luxun/self/git/dependency-tree-webpack-plugin/test/src/b.js"
+    ],
+    "modules": {
+        "/Users/luxun/self/git/dependency-tree-webpack-plugin/test/src/b.js": [
+            "/Users/luxun/self/git/dependency-tree-webpack-plugin/test/src/daa.js",
+            "/Users/luxun/self/git/dependency-tree-webpack-plugin/test/src/c.js"
+        ],
+        "/Users/luxun/self/git/dependency-tree-webpack-plugin/test/src/a.js": [
+            "/Users/luxun/self/git/dependency-tree-webpack-plugin/test/src/b.js",
+            "node_modules/vue"
+        ],
+        "/Users/luxun/self/git/dependency-tree-webpack-plugin/test/src/d.js": [],
+        "/Users/luxun/self/git/dependency-tree-webpack-plugin/test/src/c.js": [
+            "/Users/luxun/self/git/dependency-tree-webpack-plugin/test/src/daz.js",
+            "/Users/luxun/self/git/dependency-tree-webpack-plugin/test/src/index.js"
+        ]
+    }
+}
