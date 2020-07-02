@@ -1,7 +1,11 @@
 {
   "name": "dependency-tree-webpack-plugin",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "get dependency tree from webpack.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uoau/dependency-tree-webpack-plugin"
+  },
   "main": "index.js",
   "scripts": {
     "test": "webpack --config ./test/webpack.config.js"
