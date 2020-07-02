@@ -26,6 +26,9 @@ Then, just run it, a `dependency-tree` file will appear in your root directory. 
 # What's the use of this JSON
 You need install the VSCode extension `webpack tree`, And load the json file, and it will generate a tree view in the sidebar, like this.
 
+![image](https://github.com/uoau/dependency-tree-webpack-plugin/blob/master/readme-img/3.png?raw=true)
+You can take the initiative to load the JSON file, or the  VSCode extension will automatically search the `/` folder, `build` folder, `.Vscode` folder in the directory to find this file `dependency-tree.json`. 
+
 ![image](https://github.com/uoau/dependency-tree-webpack-plugin/blob/master/readme-img/2.png?raw=true)
 
 This tree is made up of project dependencies, and you can clearly understand the structure of the project. you can jump quickly between these files.
