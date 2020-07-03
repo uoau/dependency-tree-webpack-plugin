@@ -58,8 +58,8 @@ class DependencyTreePlugin {
                     }
                     item.reasons.forEach((item2) => {
                         item2.moduleName = dealUri(item2.moduleName);
-                        // 过滤名字里又node_modules
-                        if (item2.moduleName.indexOf('node_modules') > -1) {
+                        // 过滤 null  过滤名字里又node_modules
+                        if (!item2.moduleName || item2.moduleName.indexOf('node_modules') > -1) {
                             return false;
                         }
                         // 过滤cj引入的包
@@ -70,10 +70,6 @@ class DependencyTreePlugin {
                         if (item2.type === 'single entry') {
                             pushData.entry.push(item2.moduleName);
                             pushData.entry = Array.from(new Set(pushData.entry));
-                            return false;
-                        }
-                        // 过滤 null
-                        if (!item2.moduleName) {
                             return false;
                         }
                         // 过滤自己引用自己的
