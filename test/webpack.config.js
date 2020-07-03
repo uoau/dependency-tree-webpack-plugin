@@ -1,5 +1,6 @@
 const DependencyTreePlugin = require('../index').default;
 console.log(DependencyTreePlugin)
+const path = require('path');
 
 module.exports = {
     entry: {
@@ -8,6 +9,7 @@ module.exports = {
     },
     output: {
         path: `${__dirname}/dist`,
+        filename: '[name].js',
     },
     plugins: [
         new DependencyTreePlugin(),

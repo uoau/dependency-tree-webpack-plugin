@@ -1,21 +1,18 @@
 {
-    "entry": [
-        "./test/src/b.js",
-        "./test/src/a.js"
-    ],
+    "rootDir": "/Users/luxun/self/git/dependency-tree-webpack-plugin",
+    "entry": [],
     "modules": {
+        "./test/src/d.js": [],
         "./test/src/b.js": [
             "./test/src/d.js",
             "./test/src/c.js"
         ],
+        "./test/src/c.js": [
+            "./test/src/d.js"
+        ],
         "./test/src/a.js": [
             "./test/src/b.js",
             "node_modules/vue"
-        ],
-        "./test/src/d.js": [],
-        "./test/src/c.js": [
-            "./test/src/d.js"
         ]
-    },
-    "rootDir": "/Users/luxun/self/git/dependency-tree-webpack-plugin"
+    }
 }
