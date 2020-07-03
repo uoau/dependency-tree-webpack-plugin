@@ -96,7 +96,7 @@ class DependencyTreePlugin {
             let fileContent = '';
             let fileObj = {};
             try {
-                fileContent = fs.readFileSync(this.filename);
+                fileContent = fs.readFileSync(that.filename);
                 if (fileContent) {
                     fileObj = JSON.parse(fileContent);
                 }
