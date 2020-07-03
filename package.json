@@ -1,6 +1,6 @@
 {
   "name": "dependency-tree-webpack-plugin",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "get dependency tree from webpack.",
   "repository": {
     "type": "git",
