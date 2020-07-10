@@ -1,4 +1,6 @@
 import b from './b';
-import vue from 'vue'; 
 b();
-console.log(vue);
+export default function a() {
+    console.log('a');
+    b();
+}

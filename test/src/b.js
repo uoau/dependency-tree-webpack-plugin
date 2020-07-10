@@ -1,7 +1,5 @@
-import c from './c';
-import d from './d';
-c();
-d();
+import a from './a';
 export default function b() {
-    console.log('b');111
+    console.log('b');
+    a();
 }
