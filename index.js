@@ -6,7 +6,8 @@ class DependencyTreePlugin {
 
     apply(compiler) {
         const that = this;
-        compiler.plugin("emit", function(compilation, callback) {
+        const fn = compiler.hooks ? compiler.hooks.emit.tap : compiler.plugin;
+        fn("emit", function(compilation, callback) {
             const stats = compilation.getStats().toJson();
             const pushData = {
                 rootDir: compiler.context,
@@ -106,7 +107,7 @@ class DependencyTreePlugin {
             fileObj = { ...fileObj, ...pushData };
             // fs.writeFileSync('1'+that.filename, JSON.stringify(stats.modules, null, 4));
             fs.writeFileSync(that.filename, JSON.stringify(fileObj, null, 4));
-            callback();
+            callback && callback();
         })
     }
 };
